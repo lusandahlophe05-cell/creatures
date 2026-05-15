@@ -13,7 +13,7 @@ function showHome()
         document.querySelectorAll("div.creature").forEach(el => {
           //el.style.backgroundColor = "yellow";
             let myHome = el.dataset.home;
-            alert(myHome); 
+            //alert(myHome); 
             switch(home){
                 case land:
                     el.style.backgroundColor = "green";
