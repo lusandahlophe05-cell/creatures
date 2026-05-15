@@ -14,14 +14,14 @@ function showHome()
           //el.style.backgroundColor = "yellow";
             let myHome = el.dataset.home;
             //alert(myHome); 
-            switch(){
+            switch(myHome){
                 case "land":
                     el.style.backgroundColor = "green";
                 break;
-                case water:
+                case "water":
                     el.style.backgroundColor = "blue";
                 break;
-                case air:
+                case "air":
                     el.style.backgroundColor = "yellow";
                 default:
                     alert("you should not see this")
