@@ -49,13 +49,13 @@ function showType()
                     el.style.border = "solid red";
                 break;
                 case "insect":
-                    el.style.border = "deshed orange";
+                    el.style.border = "dashed orange";
                 break;
                 default:
                     alert("you should not see this")
             }
         });
-    alert("showType()");
+    //alert("showType()");
 }//end showType()
 
 function clearAll()
@@ -67,5 +67,9 @@ function clearAll()
         clear background color to white
         
     */
-    alert("clearAll()");
+   document.querySelectorAll("div.creature").forEach(function(el){
+        el.style.backgroundColor = "#FFF";
+        el.style.border = "2px solid #000";
+   });
+
 }//end clearAll()
