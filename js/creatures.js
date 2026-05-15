@@ -42,7 +42,7 @@ function showType()
 
          document.querySelectorAll("div.creature").forEach(el => {
           //el.style.backgroundColor = "yellow";
-            let myType = el.dataset.type;
+            let myType = el.dataset.creatureType;
             //alert(myHome); 
             switch(myType){
                 case "animal":
@@ -50,9 +50,6 @@ function showType()
                 break;
                 case "insect":
                     el.style.border = "deshed orange";
-                break;
-                case "air":
-                    el.style.backgroundColor = "yellow";
                 break;
                 default:
                     alert("you should not see this")
