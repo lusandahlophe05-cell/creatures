@@ -13,11 +13,22 @@ function showHome()
         document.querySelectorAll("div.creature").forEach(el => {
           //el.style.backgroundColor = "yellow";
             let myHome = el.dataset.home;
-            alert(myHome);
+            alert(myHome); 
+            switch(home){
+                case land:
+                    el.style.backgroundColor = "green";
+                break;
+                case water:
+                    el.style.backgroundColor = "blue";
+                break;
+                case air:
+                    el.style.backgroundColor = "yellow";
+            }
+        });
         
 
     
-})}//end showHome()
+}//end showHome()
 
 function showType()
 {
