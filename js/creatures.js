@@ -17,7 +17,7 @@ function showHome()
         
 
     
-})//end showHome()
+})}//end showHome()
 
 function showType()
 {
