@@ -24,9 +24,7 @@ function showHome()
                 case "air":
                     el.style.backgroundColor = "yellow";
                 break;
-                default:
-                    alert("you should not see this")
-            }
+                }
         });
         
 
@@ -41,6 +39,25 @@ function showType()
         if creature is an animal, border color solid red
         if creature is an insect, border color is dashed orange
     */
+
+         document.querySelectorAll("div.creature").forEach(el => {
+          //el.style.backgroundColor = "yellow";
+            let myType = el.dataset.type;
+            //alert(myHome); 
+            switch(myType){
+                case "animal":
+                    el.style.border = "solid red";
+                break;
+                case "insect":
+                    el.style.border = "deshed orange";
+                break;
+                case "air":
+                    el.style.backgroundColor = "yellow";
+                break;
+                default:
+                    alert("you should not see this")
+            }
+        });
     alert("showType()");
 }//end showType()
 
