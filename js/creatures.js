@@ -11,10 +11,22 @@ function showHome()
         
         */
         document.querySelectorAll("div.creature").forEach(el => {
-         el.style.backgroundColor = "yellow";
+         
+            switch(home){
+                case land:
+                    el.style.backgroundColor = "green";
+                break;
+                case water:
+                    el.style.backgroundColor = "blue";
+                break;
+                case air:
+                    el.style.backgroundColor = "yellow";
+            }
         });
 
         alert("showHome()");
+        
+
     
 }//end showHome()
 
