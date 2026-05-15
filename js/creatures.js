@@ -23,6 +23,7 @@ function showHome()
                 break;
                 case "air":
                     el.style.backgroundColor = "yellow";
+                break;
                 default:
                     alert("you should not see this")
             }
