@@ -14,8 +14,8 @@ function showHome()
           //el.style.backgroundColor = "yellow";
             let myHome = el.dataset.home;
             //alert(myHome); 
-            switch(home){
-                case land:
+            switch(){
+                case "land":
                     el.style.backgroundColor = "green";
                 break;
                 case water:
@@ -23,6 +23,8 @@ function showHome()
                 break;
                 case air:
                     el.style.backgroundColor = "yellow";
+                default:
+                    alert("you should not see this")
             }
         });
         
